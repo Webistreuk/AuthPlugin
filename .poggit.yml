@@ -1,0 +1,7 @@
+--- # Poggit-CI Manifest
+branches:
+- main
+projects:
+  AuthPlugin:
+    path: ""
+    model: pocketmine-plugin

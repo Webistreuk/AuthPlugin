@@ -1,0 +1,24 @@
+# AuthPlugin Configuration
+settings:
+  # Password requirements
+  min-password-length: 4
+  max-password-length: 16
+  
+  # Session settings
+  session-timeout: 1800  # 30 minutes in seconds
+  
+  # Security settings
+  max-login-attempts: 3
+  login-timeout: 60      # Kick after 60 seconds if not logged in
+  
+messages:
+  login-required: "§cPlease login using /login <password>"
+  register-required: "§aPlease register using /register <password> <confirm>"
+  login-success: "§aSuccessfully logged in!"
+  register-success: "§aAccount registered successfully!"
+  wrong-password: "§cIncorrect password!"
+  password-mismatch: "§cPasswords do not match!"
+  already-registered: "§cYou are already registered!"
+  not-registered: "§cYou are not registered!"
+  password-too-short: "§cPassword must be at least {min} characters!"
+  password-too-long: "§cPassword must be at most {max} characters!"

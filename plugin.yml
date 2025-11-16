@@ -1,0 +1,24 @@
+name: AuthPlugin
+version: 1.0.0
+main: skyss0fly\AuthPlugin\Main
+api: 4.0.0
+author: skyss0fly
+description: Simple authentication plugin for PocketMine-MP
+
+commands:
+  login:
+    description: Login to your account
+    usage: "/login <password>"
+  register:
+    description: Register new account
+    usage: "/register <password> <confirm_password>"
+
+permissions:
+  authplugin.*:
+    description: All permissions for AuthPlugin
+    default: op
+    children:
+      authplugin.command.login:
+        default: true
+      authplugin.command.register:
+        default: true
